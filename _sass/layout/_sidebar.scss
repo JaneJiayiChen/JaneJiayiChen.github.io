@@ -24,8 +24,8 @@
     position: fixed;
     padding-top: $masthead-height;
     box-sizing: border-box !important;
-    min-width: 220px;
-    max-width: 260px !important;
+    min-width: 180px;
+    max-width: 220px !important;
   }
 
   @include breakpoint($large) {
