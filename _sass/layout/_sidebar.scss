@@ -58,6 +58,8 @@
    // Safari 大屏专属配置
     &:not(:root:root) { // 另一种 Safari 识别方式，双重保障
       max-width: 230px !important; // Safari 大屏下同样缩小宽度
+      margin-left: 15px !important;
+      padding-left: 10px !important;
        
     &:hover {
       opacity: 1;
