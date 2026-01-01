@@ -54,6 +54,11 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
+   // 修复1：强化文本换行，确保长文本/英文地址正常换行（不再溢出）
+    word-wrap: break-word !important;          // 按单词换行，保持可读性
+    word-break: break-word !important;         // 兜底换行（替代 break-all，不截断单词中间）
+    white-space: pre-wrap !important;          // 保留换行符，强制文本自动换行
+    max-width: 100% !important;                // 文本宽度不超过侧边栏
   }
 
   img {
