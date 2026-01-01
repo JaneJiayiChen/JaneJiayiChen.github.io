@@ -23,6 +23,9 @@
     overflow-x: hidden !important; //禁止横向溢出
     position: fixed;
     padding-top: $masthead-height;
+    box-sizing: border-box !important;
+    min-width: 280px;
+    max-width: 320px !important;
   }
 
   @include breakpoint($large) {
