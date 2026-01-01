@@ -41,3 +41,52 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+// _sass/layout/sidebar.scss
+.sidebar {
+  // 核心：固定最大宽度，禁止横向溢出，保留垂直滚动
+  max-width: 300px;
+  width: 100%;
+  overflow-x: hidden; // 彻底消除横向溢出（解决边框外漏问题）
+  overflow-y: auto;   // 垂直滚动（内容过长时内部滚动，不溢出）
+  word-wrap: break-word;
+  word-break: break-all; // 强制长文本/英文地址换行
+  white-space: normal;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0;
+
+  // SCSS 嵌套：直接约束侧边栏内的作者信息容器，无需额外写选择器
+  .author-profile {
+    width: 100%;
+    max-width: 100%; // 子元素不超过父容器宽度
+    line-height: 1.6;
+    font-size: 0.85rem;
+
+    // 嵌套：单独优化长地址文本
+    .author-location {
+      word-break: break-word;
+      font-size: 0.8rem; // 缩小字体，进一步避免溢出
+    }
+
+    // 嵌套：头像样式（可直接写在这里，也可单独写在 _author-profile.scss 中）
+    .avatar {
+      // 核心：头像方形设置
+      border-radius: 0; // 取消圆角，替换默认的 50%（椭圆形）
+      width: 120px;
+      height: 120px; // 等宽高，强制方形
+      border: 2px solid #eaeaea;
+      object-fit: cover; // 防止图片拉伸
+      margin: 0 auto 1rem auto; // 居中显示，避免偏移溢出
+
+      // Safari 图片旋转校正（SCSS 兼容 CSS 变形属性）
+      transform: rotate(-90deg); // 按需调整 90deg / -90deg，校正旋转
+      transform-origin: center center; // 以中心为旋转原点，不偏移
+
+      // 可选：仅对 Safari 生效（SCSS 兼容 CSS 媒体查询/特性检测）
+      @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+        transform: rotate(-90deg);
+        transform-origin: center center;
+      }
+    }
+  }
+}
