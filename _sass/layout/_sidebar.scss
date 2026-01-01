@@ -18,7 +18,7 @@
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
+    height: 100vh !important;
     overflow-y: auto !important;               // Add scrollbar if the sidebar is too long
     overflow-x: hidden !important; //禁止横向溢出
     position: fixed;
@@ -46,6 +46,7 @@
     overflow-y: auto !important;               // 大屏下也保留垂直滚动
     box-sizing: border-box !important;
     max-width: 320px !important;
+    height: 100vh !important; // 大屏下固定高度，确保滚动生效
   }
 
   h2, h3, h4, h5, h6 {
