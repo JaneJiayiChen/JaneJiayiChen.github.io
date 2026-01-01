@@ -23,12 +23,12 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "cjy.JPG"
+  avatar           : "homepage2.png"
   name             : "Jiayi Chen(陈嘉怡)"
   pronouns         : # example: "she/her"  
-  bio              : "Resident, Department of Oral and Maxillofacial Surgery, Peking University School and Hospital of Stomatology"
+  bio              : "Resident, Department of Oral and Maxillofacial Surgery"
   location         : "No.22 Zhongguancun South Ave, Haidian District, Beijing 100081, PR China"
-  employer         : "[Peking University School and Hospital of Stomatology](https://ss.bjmu.edu.cn/)"
+  employer         : "Peking University School and Hospital of Stomatology"
   uri              : # URL
   email            : "janechen1999@pku.edu.cn" 
 
