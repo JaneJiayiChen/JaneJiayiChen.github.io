@@ -41,36 +41,46 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* 优先级拉满：适配 Jekyll Academic Pages 所有侧边栏容器，禁止横向溢出 */
+/* 1. 彻底解决侧边栏溢出问题（优先级拉满） */
 .sidebar,
 .author-profile-wrap,
 .sidebar-container,
 .col-sm-4,
 #sidebar {
-  max-width: 300px !important; /* 强制固定最大宽度，优先级最高 */
+  max-width: 300px !important;
   width: 100% !important;
-  overflow-x: hidden !important; /* 关键：禁止横向滚动，彻底消除横向溢出 */
-  overflow-y: auto !important; /* 仅保留垂直滚动（内容过长时纵向滚动，不横向溢出） */
-  word-wrap: break-word !important; /* 强制长文本换行 */
-  word-break: break-all !important; /* 针对英文地址/长单词强制截断换行 */
-  white-space: normal !important; /* 取消任何强制单行显示的样式 */
-  box-sizing: border-box !important; /* 内边距/边框不撑大容器，避免溢出 */
+  overflow-x: hidden !important; /* 禁止横向溢出（核心） */
+  overflow-y: auto !important; /* 仅保留垂直滚动（合理） */
+  word-wrap: break-word !important;
+  word-break: break-all !important;
+  white-space: normal !important;
+  box-sizing: border-box !important;
   padding: 1rem !important;
   margin: 0 !important;
 }
 
-/* 进一步约束作者信息文本，防止文本撑爆容器 */
+/* 约束侧边栏内所有文本元素，防止撑爆容器 */
 .author-profile,
-.author-profile * { /* 覆盖侧边栏内所有子元素 */
+.author-profile * {
   width: 100% !important;
-  max-width: 100% !important; /* 子元素宽度绝对不超过父容器 */
+  max-width: 100% !important;
   line-height: 1.6 !important;
-  font-size: 0.85rem !important; /* 适当缩小字体，减少溢出概率 */
+  font-size: 0.85rem !important;
   box-sizing: border-box !important;
 }
 
-/* 针对你的长地址文本，单独强化换行 */
+/* 单独优化长地址文本 */
 .author-profile .author-location {
-  word-break: break-word !important; /* 优先按单词换行，保持可读性 */
-  font-size: 0.8rem !important; /* 进一步缩小地址字体，彻底避免溢出 */
+  word-break: break-word !important;
+  font-size: 0.8rem !important;
+}
+
+/* 2. 头像改为方形边框（优先级拉满） */
+.author-profile .avatar {
+  border-radius: 0 !important; /* 取消圆角，覆盖默认椭圆形 */
+  width: 120px !important;
+  height: 120px !important; /* 等宽高强制方形 */
+  border: 2px solid #eaeaea !important;
+  object-fit: cover !important;
+  margin: 0 auto 1rem auto !important; /* 居中避免偏移溢出 */
 }
