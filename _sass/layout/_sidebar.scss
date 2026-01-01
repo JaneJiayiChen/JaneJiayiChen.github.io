@@ -30,6 +30,7 @@
     right: auto !important; // 不占用右侧空间
     z-index: 9 !important; // 降低层级，避免覆盖右侧核心内容（低于主页层级）
     margin-left: 15px !important;
+    padding-left: 10px !important;
   }
     // Safari 专属配置（仅在 Safari 中生效，缩小宽度解决遮盖）
   @media screen and (min-width: $sidebar-screen-min-width) and (-webkit-min-device-pixel-ratio: 1) {
@@ -39,6 +40,7 @@
     float: left !important;
     clear: left !important; // 清除浮动，不干扰右侧布局
     margin-left: 15px !important;
+    padding-left: 10px !important;
   }
 
   @include breakpoint($large) {
@@ -50,6 +52,7 @@
     max-width: 260px !important;
     float: left !important; // 强制左浮动，为右侧内容预留空间
     margin-left: 15px !important;
+    padding-left: 10px !important;
    // Safari 大屏专属配置
     &:not(:root:root) { // 另一种 Safari 识别方式，双重保障
       max-width: 230px !important; // Safari 大屏下同样缩小宽度
@@ -68,9 +71,13 @@
     max-width: 260px !important;
     height: 100vh !important; // 大屏下固定高度，确保滚动生效
     float: left !important; //修复：左浮动
+    margin-left: 15px !important;
+    padding-left: 10px !important;
      
    &:not(:root:root) {
      max-width: 230px !important; // Safari 超大屏下缩小宽度
+     margin-left: 15px !important;
+     padding-left: 10px !important;
      }
   }
 
