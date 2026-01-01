@@ -19,9 +19,16 @@
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    // 修复1：恢复垂直滚动（保留原有 auto，确保内容过长时可纵向滚动）
+    overflow-y: auto !important;               // Add scrollbar if the sidebar is too long
+    // 保留横向溢出禁止（核心需求，不修改）
+    overflow-x: hidden !important;  // 禁止横向溢出（解决侧边栏内容左右超出问题）
     position: fixed;
     padding-top: $masthead-height;
+    box-sizing: border-box !important; // 内边距不撑大容器，避免溢出
+    // 修复2：新增 - 给侧边栏设置最小宽度兜底，避免被内容挤压变形
+    min-width: 280px;
+    max-width: 320px !important; // 固定最大宽度，彻底防止横向撑爆
   }
 
   @include breakpoint($large) {
@@ -38,6 +45,11 @@
   @include breakpoint($x-large) {
     max-width: $sidebar-link-max-width;
     padding-right: 0;
+    overflow-x: hidden !important;  // 大屏下同样禁止横向溢出
+    box-sizing: border-box !important; // 布局约束
+    // 修复3：大屏下也保留垂直滚动，避免高度不足无法滚动
+    overflow-y: auto !important;
+    max-width: 320px !important; // 大屏下固定最大宽度，防止溢出
   }
 
   h2, h3, h4, h5, h6 {
@@ -53,10 +65,18 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
+    // 保留文本换行属性，兜底防溢出
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+    white-space: normal !important;
+    max-width: 100% !important;
+    // 修复4：新增 - 禁止文本横向溢出，强制隐藏超出部分（兜底）
+    overflow: hidden;
   }
 
   img {
     width: 100%;
+    max-width: 100% !important;
   }
 }
 
@@ -95,12 +115,23 @@
 
   img {
     max-width: 175px;
-    border-radius: 50%;
-
+    border-radius: 0 !important; // 方形边框，保留
+    width: 120px !important;     // 方形宽度，保留
+    height: 120px !important;    // 方形高度，保留
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid var(--global-border-color);
+      margin: 0 auto; // 头像居中，保留
     }
+    // Safari 旋转校正，保留（按需调整角度）
+    transform: rotate(-90deg) !important;
+    transform-origin: center center !important;
+    @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+      transform: rotate(-90deg) !important;
+      transform-origin: center center !important;
+    }
+    // 修复5：头像自身禁止溢出，保持方形完整
+    overflow: hidden;
   }
 }
 
@@ -110,12 +141,16 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+  max-width: 100% !important;
 
   @include breakpoint($large) {
     display: block;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    // 修复6：作者内容容器高度自适应，不阻断滚动
+    height: auto;
+    overflow: visible;
   }
 }
 
@@ -130,6 +165,7 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+  max-width: 100% !important;
 }
 
 .sidebar .author__desktop {
@@ -141,6 +177,7 @@
 
 .author__pronouns {
   margin: 0;
+  max-width: 100% !important;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -150,6 +187,7 @@
 
 .author__bio {
   margin: 0;
+  max-width: 100% !important;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -165,6 +203,7 @@
   z-index: 10;
   position: relative;
   cursor: pointer;
+  max-width: 100% !important;
 
   li:last-child {
     a {
@@ -174,6 +213,8 @@
 
   @include breakpoint($large) {
     display: block;
+    // 修复7：链接容器高度自适应，不阻断侧边栏滚动
+    height: auto;
   }
 
   button {
@@ -198,6 +239,7 @@
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
+  max-width: 100% !important;
 
   @include breakpoint($large) {
     display: block;
@@ -207,6 +249,9 @@
     border: 0;
     background: transparent;
     box-shadow: none;
+    // 修复8：链接列表高度自适应，不阻断滚动
+    height: auto;
+    overflow: visible;
   }
 
   &:before {
@@ -245,6 +290,7 @@
 
   li {
     white-space: nowrap;
+    max-width: 100% !important;
   }
 
   a {
@@ -256,6 +302,7 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
+    max-width: 100% !important;
 
     &:hover {
       text-decoration: underline;
