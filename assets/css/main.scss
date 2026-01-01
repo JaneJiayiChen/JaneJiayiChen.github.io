@@ -41,25 +41,36 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-/* 约束侧边栏容器，防止内容溢出 */
-.sidebar {
-  max-width: 300px; /* 固定侧边栏最大宽度，适配 Academic Pages 默认布局，可按需微调 */
-  width: 100%;
-  overflow: hidden; /* 隐藏超出侧边栏的内容（优先） */
-  word-wrap: break-word; /* 自动换行：长文本（如你的地址）自动截断换行，不横向溢出 */
-  white-space: normal; /* 取消强制单行显示，确保文本换行 */
-  box-sizing: border-box; /* 内边距不撑大侧边栏宽度，避免溢出 */
-  padding: 1rem !important; /* 调整内边距，预留空白，避免文字贴边 */
+/* 优先级拉满：适配 Jekyll Academic Pages 所有侧边栏容器，禁止横向溢出 */
+.sidebar,
+.author-profile-wrap,
+.sidebar-container,
+.col-sm-4,
+#sidebar {
+  max-width: 300px !important; /* 强制固定最大宽度，优先级最高 */
+  width: 100% !important;
+  overflow-x: hidden !important; /* 关键：禁止横向滚动，彻底消除横向溢出 */
+  overflow-y: auto !important; /* 仅保留垂直滚动（内容过长时纵向滚动，不横向溢出） */
+  word-wrap: break-word !important; /* 强制长文本换行 */
+  word-break: break-all !important; /* 针对英文地址/长单词强制截断换行 */
+  white-space: normal !important; /* 取消任何强制单行显示的样式 */
+  box-sizing: border-box !important; /* 内边距/边框不撑大容器，避免溢出 */
+  padding: 1rem !important;
+  margin: 0 !important;
 }
 
-/* 约束作者信息文本，进一步防止溢出 */
-.author-profile {
-  width: 100%;
-  line-height: 1.6; /* 增大行高，提升可读性，同时避免文字拥挤溢出 */
+/* 进一步约束作者信息文本，防止文本撑爆容器 */
+.author-profile,
+.author-profile * { /* 覆盖侧边栏内所有子元素 */
+  width: 100% !important;
+  max-width: 100% !important; /* 子元素宽度绝对不超过父容器 */
+  line-height: 1.6 !important;
+  font-size: 0.85rem !important; /* 适当缩小字体，减少溢出概率 */
+  box-sizing: border-box !important;
 }
 
-/* 针对长地址文本单独优化（可选，你的location字段较长） */
+/* 针对你的长地址文本，单独强化换行 */
 .author-profile .author-location {
-  font-size: 0.85rem; /* 适当缩小字体，避免因文字过长溢出 */
-  word-break: break-all; /* 极端情况下，强制截断长单词/地址换行 */
+  word-break: break-word !important; /* 优先按单词换行，保持可读性 */
+  font-size: 0.8rem !important; /* 进一步缩小地址字体，彻底避免溢出 */
 }
