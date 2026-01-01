@@ -66,6 +66,9 @@
     word-break: break-word !important;         // 兜底换行（替代 break-all，不截断单词中间）
     white-space: pre-wrap !important;          // 保留换行符，强制文本自动换行
     max-width: 100% !important;                // 文本宽度不超过侧边栏
+    // 确保：绝对没有 overflow: hidden; 这一行（已删除/注释）
+    // 新增：文本容器高度自适应，不阻断滚动
+    height: auto !important;
   }
 
   img {
@@ -73,7 +76,16 @@
     max-width: 100% !important;
   }
 }
-
+// 关键修复：作者信息所有子容器，高度自适应，不阻断侧边栏滚动
+.author__content,
+.author__urls-wrapper,
+.author__urls {
+  @include breakpoint($large) {
+    height: auto !important; // 强制高度自适应
+    overflow: visible !important; // 取消任何溢出隐藏配置
+    position: relative !important; // 解除绝对定位导致的滚动阻断
+  }
+}
 .sidebar__right {
   margin-bottom: 1em;
 
