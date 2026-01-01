@@ -41,3 +41,25 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* 约束侧边栏容器，防止内容溢出 */
+.sidebar {
+  max-width: 300px; /* 固定侧边栏最大宽度，适配 Academic Pages 默认布局，可按需微调 */
+  width: 100%;
+  overflow: hidden; /* 隐藏超出侧边栏的内容（优先） */
+  word-wrap: break-word; /* 自动换行：长文本（如你的地址）自动截断换行，不横向溢出 */
+  white-space: normal; /* 取消强制单行显示，确保文本换行 */
+  box-sizing: border-box; /* 内边距不撑大侧边栏宽度，避免溢出 */
+  padding: 1rem !important; /* 调整内边距，预留空白，避免文字贴边 */
+}
+
+/* 约束作者信息文本，进一步防止溢出 */
+.author-profile {
+  width: 100%;
+  line-height: 1.6; /* 增大行高，提升可读性，同时避免文字拥挤溢出 */
+}
+
+/* 针对长地址文本单独优化（可选，你的location字段较长） */
+.author-profile .author-location {
+  font-size: 0.85rem; /* 适当缩小字体，避免因文字过长溢出 */
+  word-break: break-all; /* 极端情况下，强制截断长单词/地址换行 */
+}
