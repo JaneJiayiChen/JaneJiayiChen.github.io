@@ -1,5 +1,5 @@
 ---
-title: "Modified Dautrey\'s Procedure for Recurrent Temporomandibular Joint Dislocation"
+title: "Modified Dautrey's Procedure for Recurrent Temporomandibular Joint Dislocation"
 collection: publications
 category: manuscripts
 permalink: /publication/2024-07-11-paper-title-number-1
