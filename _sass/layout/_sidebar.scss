@@ -24,8 +24,12 @@
     position: fixed;
     padding-top: $masthead-height;
     box-sizing: border-box !important;
-    min-width: 180px;
-    max-width: 220px !important;
+    min-width: 220px;
+    max-width: 260px !important;
+    // 修复：调整左侧/右侧间距，预留右侧主页空间（可选，进一步避免覆盖）
+    left: 0 !important; // 固定侧边栏在左侧，不偏移
+    right: auto !important; // 不占用右侧空间
+    z-index: 9 !important; // 降低层级，避免覆盖右侧核心内容（低于主页层级）
   }
 
   @include breakpoint($large) {
@@ -33,7 +37,10 @@
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
-
+    // 修复：栅格布局下，限制最大宽度，不超出分配空间
+    max-width: 260px !important;
+    float: left !important; // 强制左浮动，为右侧内容预留空间
+     
     &:hover {
       opacity: 1;
     }
@@ -45,8 +52,9 @@
     overflow-x: hidden !important;
     overflow-y: auto !important;               // 大屏下也保留垂直滚动
     box-sizing: border-box !important;
-    max-width: 320px !important;
+    max-width: 260px !important;
     height: 100vh !important; // 大屏下固定高度，确保滚动生效
+    float: left !important; //修复：左浮动
   }
 
   h2, h3, h4, h5, h6 {
