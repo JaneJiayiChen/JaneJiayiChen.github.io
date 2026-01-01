@@ -29,7 +29,7 @@
     min-width: 220px;
     max-width: 260px !important;
     // 修复：调整左侧/右侧间距，预留右侧主页空间（可选，进一步避免覆盖）
-    right: auto !important; // 不占用右侧空间
+    //right: auto !important; // 不占用右侧空间
     z-index: 9 !important; // 降低层级，避免覆盖右侧核心内容（低于主页层级）
     margin-left: 15px !important;
     padding-left: 10px !important;
@@ -40,7 +40,7 @@
     max-width: 230px !important; // 核心！比 Edge 小 30px，彻底解决遮盖问题
     z-index: 8 !important; // 比 Edge 略低，避免遮盖右侧
     float: left !important;
-    //clear: left !important; // 清除浮动，不干扰右侧布局
+    clear: left !important; // 清除浮动，不干扰右侧布局
     margin-left: 15px !important;
     padding-left: 10px !important;
   }
@@ -74,7 +74,7 @@
     box-sizing: border-box !important;
     max-width: 260px !important;
     height: 100vh !important; // 大屏下固定高度，确保滚动生效
-    //float: left !important; //修复：左浮动
+    float: left !important; //修复：左浮动
     margin-left: 15px !important;
     padding-left: 10px !important;
      
