@@ -20,12 +20,8 @@
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    // 修改1：新增 - 禁止横向溢出（核心解决侧边栏内容左右超出边框问题）
-    overflow-x: hidden !important;
     position: fixed;
     padding-top: $masthead-height;
-    // 修改2：新增 - 内边距不撑大容器宽度，避免布局溢出
-    box-sizing: border-box !important;
   }
 
   @include breakpoint($large) {
@@ -42,10 +38,6 @@
   @include breakpoint($x-large) {
     max-width: $sidebar-link-max-width;
     padding-right: 0;
-    // 修改3：新增 - 大屏尺寸下同样禁止横向溢出，保持一致性
-    overflow-x: hidden !important;
-    // 修改4：新增 - 大屏尺寸下约束布局，避免内边距撑大容器
-    box-sizing: border-box !important;
   }
 
   h2, h3, h4, h5, h6 {
@@ -61,20 +53,10 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
-    // 修改5：新增 - 强制长文本换行，防止英文地址/单词横向溢出
-    word-wrap: break-word !important;
-    // 修改6：新增 - 极端情况下强制截断长文本，兜底防溢出
-    word-break: break-all !important;
-    // 修改7：新增 - 取消强制单行显示，确保文本自动换行
-    white-space: normal !important;
-    // 修改8：新增 - 文本宽度绝对不超过侧边栏容器
-    max-width: 100% !important;
   }
 
   img {
     width: 100%;
-    // 修改9：新增 - 图片宽度不超出侧边栏容器，避免图片溢出
-    max-width: 100% !important;
   }
 }
 
@@ -113,27 +95,11 @@
 
   img {
     max-width: 175px;
-    // 修改10：核心修改 - 将原有 border-radius: 50%（椭圆形）改为 0（方形），强制取消圆角
-    border-radius: 0 !important;
-    // 修改11：新增 - 强制头像宽度为固定值，配合高度实现方形
-    width: 120px !important;
-    // 修改12：新增 - 强制头像高度与宽度一致，确保呈现方形（核心）
-    height: 120px !important;
-    // 保留原有边框样式，确保方形边框可见
+    border-radius: 50%;
+
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid var(--global-border-color);
-      // 修改13：新增 - 头像居中显示，避免左右偏移导致的溢出
-      margin: 0 auto;
-    }
-    // 修改14：新增 - Safari 浏览器头像旋转校正，按需调整角度（90deg/-90deg）
-    transform: rotate(-90deg) !important;
-    // 修改15：新增 - 以头像中心为旋转原点，避免旋转后位置偏移
-    transform-origin: center center !important;
-    // 修改16：可选新增 - 仅对 Safari 浏览器生效，不影响 Edge 等其他浏览器
-    @supports (-webkit-touch-callout: none) and (not (translate: none)) {
-      transform: rotate(-90deg) !important;
-      transform-origin: center center !important;
     }
   }
 }
@@ -144,8 +110,6 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
-  // 修改17：新增 - 作者内容容器不超出父容器宽度，避免溢出
-  max-width: 100% !important;
 
   @include breakpoint($large) {
     display: block;
@@ -166,8 +130,6 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
-  // 修改18：新增 - 作者名字不横向溢出侧边栏
-  max-width: 100% !important;
 }
 
 .sidebar .author__desktop {
@@ -179,8 +141,6 @@
 
 .author__pronouns {
   margin: 0;
-  // 修改19：新增 - 代词文本不横向溢出侧边栏
-  max-width: 100% !important;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -190,8 +150,6 @@
 
 .author__bio {
   margin: 0;
-  // 修改20：新增 - 作者简介不横向溢出侧边栏
-  max-width: 100% !important;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -207,8 +165,6 @@
   z-index: 10;
   position: relative;
   cursor: pointer;
-  // 修改21：新增 - 链接容器不超出侧边栏宽度，避免溢出
-  max-width: 100% !important;
 
   li:last-child {
     a {
@@ -242,8 +198,6 @@
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
-  // 修改22：新增 - 链接列表容器不横向溢出
-  max-width: 100% !important;
 
   @include breakpoint($large) {
     display: block;
@@ -291,8 +245,6 @@
 
   li {
     white-space: nowrap;
-    // 修改23：新增 - 链接列表项不横向溢出
-    max-width: 100% !important;
   }
 
   a {
@@ -304,8 +256,6 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
-    // 修改24：新增 - 链接文本不横向溢出
-    max-width: 100% !important;
 
     &:hover {
       text-decoration: underline;
