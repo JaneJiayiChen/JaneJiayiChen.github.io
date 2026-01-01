@@ -42,6 +42,10 @@
   @include breakpoint($x-large) {
     max-width: $sidebar-link-max-width;
     padding-right: 0;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;               // 大屏下也保留垂直滚动
+    box-sizing: border-box !important;
+    max-width: 320px !important;
   }
 
   h2, h3, h4, h5, h6 {
@@ -66,6 +70,7 @@
 
   img {
     width: 100%;
+    max-width: 100% !important;
   }
 }
 
