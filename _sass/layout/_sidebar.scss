@@ -28,18 +28,20 @@
     box-sizing: border-box !important;
     min-width: 220px;
     max-width: 260px !important;
-    // 修复：调整左侧/右侧间距，预留右侧主页空间（可选，进一步避免覆盖）
+    // 修复：调整左侧/右侧间距，预留右侧主页空间
+    left: auto !important; //显式取消 left: 0，解决紧贴左侧
     //right: auto !important; // 不占用右侧空间
     z-index: 9 !important; // 降低层级，避免覆盖右侧核心内容（低于主页层级）
     margin-left: 15px !important;
     padding-left: 10px !important;
   }
-    // Safari 专属配置（仅在 Safari 中生效，缩小宽度解决遮盖）
+    // Safari （仅在 Safari 中生效，缩小宽度解决遮盖）
   @media screen and (min-width: $sidebar-screen-min-width) and (-webkit-min-device-pixel-ratio: 1) {
     min-width: 200px !important; // 比 Edge 小 20px，适配 Safari 渲染
     max-width: 230px !important; // 核心！比 Edge 小 30px，彻底解决遮盖问题
+    left: auto !important; //显式取消 left: 0，解决紧贴左侧
     z-index: 8 !important; // 比 Edge 略低，避免遮盖右侧
-    float: left !important;
+    //float: left !important;//
     clear: left !important; // 清除浮动，不干扰右侧布局
     margin-left: 15px !important;
     padding-left: 10px !important;
