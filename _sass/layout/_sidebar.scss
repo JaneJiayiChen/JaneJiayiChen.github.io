@@ -45,6 +45,7 @@
     clear: left !important; // 清除浮动，不干扰右侧布局
     margin-left: 15px !important;
     padding-left: 10px !important;
+    float: none !important; // 固定定位下 Edge 浮动无效，注释/设为 none
   }
 
   @include breakpoint($large) {
