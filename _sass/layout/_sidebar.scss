@@ -12,7 +12,7 @@
 
   @include clearfix();
   margin-bottom: 1em;
-  margin-left: 10px !important; // 可按需微调（8px~20px 最佳）
+  margin-left: 8px !important; // 可按需微调（8px~20px 最佳）
   padding-left: 8px !important;
 
   @media (orientation: portrait) {
@@ -44,7 +44,7 @@
     z-index: 8 !important; // 比 Edge 略低，避免遮盖右侧
     //float: left !important;//
     clear: left !important; // 清除浮动，不干扰右侧布局
-    margin-left: 15px !important;
+    margin-left: 12px !important;
     padding-left: 10px !important;
   }
 
