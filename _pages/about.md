@@ -39,6 +39,6 @@ Education
 
 ·2022/09 – 2025/06, Master of Science, Oral and Maxillofacial Surgery, School of Stomatology, Peking University Health Science Center, Beijing, China, supervisor Associate Prof. Jingang An
 
-·2017/09 – 2022/06, Bachelor, Dental Medicine (B.Dent), School of Stomatology, Peking University Health Science Center, Beijing
+·2017/09 – 2022/06, Bachelor, Dental Medicine (B.Dent), School of Stomatology, Peking University Health Science Center, Beijing, China
 
 ·2011/09 – 2017/06, Science Honors Class, Tianjin No.1 High School, Tianjin, China
