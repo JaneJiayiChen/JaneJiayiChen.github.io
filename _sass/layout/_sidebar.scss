@@ -34,6 +34,7 @@
     z-index: 9 !important; // 降低层级，避免覆盖右侧核心内容（低于主页层级）
     margin-left: 15px !important;
     padding-left: 10px !important;
+    float: none !important; // 固定定位下 Edge 浮动无效，注释/设为 none
   }
     // Safari （仅在 Safari 中生效，缩小宽度解决遮盖）
   @media screen and (min-width: $sidebar-screen-min-width) and (-webkit-min-device-pixel-ratio: 1) {
@@ -45,7 +46,6 @@
     clear: left !important; // 清除浮动，不干扰右侧布局
     margin-left: 15px !important;
     padding-left: 10px !important;
-    float: none !important; // 固定定位下 Edge 浮动无效，注释/设为 none
   }
 
   @include breakpoint($large) {
