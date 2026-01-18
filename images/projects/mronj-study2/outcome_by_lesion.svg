@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">病变特点 vs 预后</text>
+<line x1="70" y1="350" x2="700" y2="350" stroke="#6B4E3D" />
+<text x="18" y="200.0" text-anchor="middle" transform="rotate(-90,18,200.0)">比例</text>
+<text x="360.0" y="402" text-anchor="middle">病变特点</text>
+<rect x="540" y="22" width="12" height="12" fill="#C8553D" />
+<text x="558" y="33">不愈合/复发</text>
+<rect x="540" y="38" width="12" height="12" fill="#F2CC8F" />
+<text x="558" y="49">愈合</text>
+<rect x="112.0" y="269.5121951219512" width="126.0" height="80.48780487804879" fill="#C8553D" />
+<rect x="112.0" y="50.0" width="126.0" height="219.5121951219512" fill="#F2CC8F" />
+<text x="175.0" y="366" text-anchor="middle">破坏</text>
+<rect x="322.0" y="293.9024390243902" width="126.0" height="56.09756097560975" fill="#C8553D" />
+<rect x="322.0" y="235.36585365853657" width="126.0" height="58.53658536585366" fill="#F2CC8F" />
+<text x="385.0" y="366" text-anchor="middle">硬化</text>
+<rect x="532.0" y="337.8048780487805" width="126.0" height="12.195121951219512" fill="#C8553D" />
+<rect x="532.0" y="310.9756097560976" width="126.0" height="26.829268292682926" fill="#F2CC8F" />
+<text x="595.0" y="366" text-anchor="middle">混合</text>
+</svg>

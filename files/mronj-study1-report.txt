@@ -1,0 +1,23 @@
+研究1：影像学特征与临床特征关联分析（聚合结果）
+纳入样本量: 186
+化验字段来源: hb=derived_from_numeric, alb=derived_from_numeric, ca=derived_from_numeric, glu=derived_from_numeric
+
+影像学特征两两关联：
+- periosteal_vs_sequestrum: chi2=5.35, p=0.0208
+- sequestrum_vs_lesion: chi2=25.22, p=0.0000
+- periosteal_vs_lesion: chi2=4.23, p=0.1208
+
+骨膜反应多因素显著项：
+- 血色素（正常）: OR=2.131, p=0.0172
+- 原发病=良性疾病: OR=8.215, p=0.0068
+
+死骨分离多因素显著项：
+- 出现症状至入院时间: OR=0.947, p=0.0010
+
+病变特点两两对比显著项：
+- 硬化 vs 破坏 | 出现症状至入院时间: OR=0.925, p=0.0077
+
+输出说明：
+- 表格：analysis_outputs/study1/tables/
+- 图像：analysis_outputs/study1/figures/
+- 所有结果均为聚合统计，不包含原始数据。

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="480.0" y="26" text-anchor="middle">影像学特征分布</text>
+<text x="18" y="175.0" text-anchor="middle" transform="rotate(-90,18,175.0)">人数</text>
+<text x="206.66666666666666" y="42" text-anchor="middle">骨膜反应</text>
+<line x1="60.0" y1="300" x2="353.3333333333333" y2="300" stroke="#264653" />
+<rect x="89.33333333333334" y="50.0" width="87.99999999999999" height="250.0" fill="#2A9D8F" />
+<text x="133.33333333333334" y="62" text-anchor="middle">104</text>
+<text x="133.33333333333334" y="316" text-anchor="middle">否</text>
+<rect x="236.0" y="102.88461538461539" width="87.99999999999999" height="197.1153846153846" fill="#2A9D8F" />
+<text x="280.0" y="96.88461538461539" text-anchor="middle">82</text>
+<text x="280.0" y="316" text-anchor="middle">是</text>
+<text x="500.0" y="42" text-anchor="middle">死骨分离</text>
+<line x1="353.3333333333333" y1="300" x2="646.6666666666666" y2="300" stroke="#264653" />
+<rect x="382.66666666666663" y="50.0" width="87.99999999999999" height="250.0" fill="#2A9D8F" />
+<text x="426.66666666666663" y="62" text-anchor="middle">135</text>
+<text x="426.66666666666663" y="316" text-anchor="middle">否</text>
+<rect x="529.3333333333334" y="205.55555555555554" width="87.99999999999999" height="94.44444444444444" fill="#2A9D8F" />
+<text x="573.3333333333334" y="199.55555555555554" text-anchor="middle">51</text>
+<text x="573.3333333333334" y="316" text-anchor="middle">是</text>
+<text x="793.3333333333333" y="42" text-anchor="middle">病变特点</text>
+<line x1="646.6666666666666" y1="300" x2="940.0" y2="300" stroke="#264653" />
+<rect x="666.2222222222222" y="50.0" width="58.66666666666666" height="250.0" fill="#2A9D8F" />
+<text x="695.5555555555555" y="62" text-anchor="middle">123</text>
+<text x="695.5555555555555" y="316" text-anchor="middle">破坏</text>
+<rect x="763.9999999999999" y="204.47154471544715" width="58.66666666666666" height="95.52845528455285" fill="#2A9D8F" />
+<text x="793.3333333333333" y="198.47154471544715" text-anchor="middle">47</text>
+<text x="793.3333333333333" y="316" text-anchor="middle">硬化</text>
+<rect x="861.7777777777777" y="267.479674796748" width="58.66666666666666" height="32.520325203252035" fill="#2A9D8F" />
+<text x="891.1111111111111" y="261.479674796748" text-anchor="middle">16</text>
+<text x="891.1111111111111" y="316" text-anchor="middle">混合</text>
+</svg>

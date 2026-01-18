@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">骨膜反应 vs 病变特点</text>
+<line x1="70" y1="350" x2="700" y2="350" stroke="#6B705C" />
+<text x="18" y="200.0" text-anchor="middle" transform="rotate(-90,18,200.0)">比例</text>
+<text x="360.0" y="402" text-anchor="middle">骨膜反应</text>
+<rect x="540" y="22" width="12" height="12" fill="#4F6F52" />
+<text x="558" y="33">破坏</text>
+<rect x="540" y="38" width="12" height="12" fill="#A3B18A" />
+<text x="558" y="49">硬化</text>
+<rect x="540" y="54" width="12" height="12" fill="#DDA15E" />
+<text x="558" y="65">混合</text>
+<rect x="133.0" y="156.73076923076923" width="189.0" height="193.26923076923077" fill="#4F6F52" />
+<rect x="133.0" y="67.3076923076923" width="189.0" height="89.42307692307692" fill="#A3B18A" />
+<rect x="133.0" y="50.000000000000014" width="189.0" height="17.30769230769231" fill="#DDA15E" />
+<text x="227.5" y="366" text-anchor="middle">否</text>
+<rect x="448.0" y="145.12195121951217" width="189.0" height="204.87804878048783" fill="#4F6F52" />
+<rect x="448.0" y="86.58536585365852" width="189.0" height="58.53658536585366" fill="#A3B18A" />
+<rect x="448.0" y="49.99999999999998" width="189.0" height="36.58536585365854" fill="#DDA15E" />
+<text x="542.5" y="366" text-anchor="middle">是</text>
+</svg>

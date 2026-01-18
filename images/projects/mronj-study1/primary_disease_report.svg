@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">原发病分布（报告口径）</text>
+<path d="M 240 220 L 380.0 220.0 A 140 140 0 0 1 191.4 351.3 Z" fill="#C8553D" stroke="#6B4E3D" />
+<path d="M 240 220 L 191.4 351.3 A 140 140 0 0 1 102.9 191.8 Z" fill="#F2CC8F" stroke="#6B4E3D" />
+<path d="M 240 220 L 102.9 191.8 A 140 140 0 0 1 174.1 96.5 Z" fill="#84A59D" stroke="#6B4E3D" />
+<path d="M 240 220 L 174.1 96.5 A 140 140 0 0 1 275.1 84.5 Z" fill="#F28482" stroke="#6B4E3D" />
+<path d="M 240 220 L 275.1 84.5 A 140 140 0 0 1 336.5 118.5 Z" fill="#D4A373" stroke="#6B4E3D" />
+<path d="M 240 220 L 336.5 118.5 A 140 140 0 0 1 368.7 164.8 Z" fill="#C8553D" stroke="#6B4E3D" />
+<path d="M 240 220 L 368.7 164.8 A 140 140 0 0 1 374.9 182.6 Z" fill="#F2CC8F" stroke="#6B4E3D" />
+<path d="M 240 220 L 374.9 182.6 A 140 140 0 0 1 380.0 220.0 Z" fill="#84A59D" stroke="#6B4E3D" />
+<rect x="440" y="80" width="12" height="12" fill="#C8553D" />
+<text x="458" y="91">乳腺癌 (57, 30.6%)</text>
+<rect x="440" y="98" width="12" height="12" fill="#F2CC8F" />
+<text x="458" y="109">肺癌 (42, 22.6%)</text>
+<rect x="440" y="116" width="12" height="12" fill="#84A59D" />
+<text x="458" y="127">前列腺癌 (26, 14.0%)</text>
+<rect x="440" y="134" width="12" height="12" fill="#F28482" />
+<text x="458" y="145">多发性骨髓瘤 (22, 11.8%)</text>
+<rect x="440" y="152" width="12" height="12" fill="#D4A373" />
+<text x="458" y="163">骨质疏松 (15, 8.1%)</text>
+<rect x="440" y="170" width="12" height="12" fill="#C8553D" />
+<text x="458" y="181">肾癌 (12, 6.5%)</text>
+<rect x="440" y="188" width="12" height="12" fill="#F2CC8F" />
+<text x="458" y="199">类风湿性关节炎 (4, 2.2%)</text>
+<rect x="440" y="206" width="12" height="12" fill="#84A59D" />
+<text x="458" y="217">其他 (8, 4.3%)</text>
+</svg>

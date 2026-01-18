@@ -1,10 +1,17 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 ---
 
 {% include base_path %}
 
-Project page: [MRONJ Surgical Outcome Analysis](/portfolio/mronj-surgical-outcome-analysis/)
+这里汇总所有项目的简介（目前 1 个）。点击条目默认进入中文介绍，可在页面顶部切换英文。
+
+Project list (1 item). Each entry opens the Chinese page by default; the English toggle is available at the top of the detail page.
+
+{% assign entries_layout = "list" %}
+{% for post in site.portfolio %}
+  {% include archive-single.html type=entries_layout %}
+{% endfor %}

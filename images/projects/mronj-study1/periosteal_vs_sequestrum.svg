@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">骨膜反应 vs 死骨分离</text>
+<line x1="70" y1="350" x2="700" y2="350" stroke="#495057" />
+<text x="18" y="200.0" text-anchor="middle" transform="rotate(-90,18,200.0)">比例</text>
+<text x="360.0" y="402" text-anchor="middle">骨膜反应</text>
+<rect x="540" y="22" width="12" height="12" fill="#2F6690" />
+<text x="558" y="33">否</text>
+<rect x="540" y="38" width="12" height="12" fill="#88A2AA" />
+<text x="558" y="49">是</text>
+<rect x="133.0" y="153.84615384615384" width="189.0" height="196.15384615384616" fill="#2F6690" />
+<rect x="133.0" y="50.0" width="189.0" height="103.84615384615384" fill="#88A2AA" />
+<text x="227.5" y="366" text-anchor="middle">否</text>
+<rect x="448.0" y="104.87804878048783" width="189.0" height="245.12195121951217" fill="#2F6690" />
+<rect x="448.0" y="50.00000000000003" width="189.0" height="54.8780487804878" fill="#88A2AA" />
+<text x="542.5" y="366" text-anchor="middle">是</text>
+</svg>

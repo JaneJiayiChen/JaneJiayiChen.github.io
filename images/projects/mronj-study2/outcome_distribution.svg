@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">术后预后分布</text>
+<line x1="70" y1="350" x2="700" y2="350" stroke="#6B4E3D" />
+<text x="18" y="200.0" text-anchor="middle" transform="rotate(-90,18,200.0)">人数</text>
+<text x="360.0" y="402" text-anchor="middle">预后类别</text>
+<rect x="580" y="22" width="12" height="12" fill="#C8553D" />
+<text x="598" y="33">人数</text>
+<rect x="133.0" y="214.44444444444446" width="189.0" height="135.55555555555554" fill="#C8553D" />
+<text x="227.5" y="208.44444444444446" text-anchor="middle">61</text>
+<text x="227.5" y="366" text-anchor="middle">不愈合/复发</text>
+<rect x="448.0" y="72.22222222222223" width="189.0" height="277.77777777777777" fill="#C8553D" />
+<text x="542.5" y="66.22222222222223" text-anchor="middle">125</text>
+<text x="542.5" y="366" text-anchor="middle">愈合</text>
+</svg>

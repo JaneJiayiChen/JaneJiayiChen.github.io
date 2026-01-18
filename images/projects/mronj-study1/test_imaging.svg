@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="190.0" y="22" text-anchor="middle">骨膜反应</text>
+<line x1="40.0" y1="270" x2="340.0" y2="270" stroke="#6C757D" />
+<rect x="70.0" y="30.0" width="90.0" height="240.0" fill="#2F6690" />
+<text x="115.0" y="286" text-anchor="middle">否</text>
+<rect x="220.0" y="80.76923076923077" width="90.0" height="189.23076923076923" fill="#2F6690" />
+<text x="265.0" y="286" text-anchor="middle">是</text>
+<text x="490.0" y="22" text-anchor="middle">死骨分离</text>
+<line x1="340.0" y1="270" x2="640.0" y2="270" stroke="#6C757D" />
+<rect x="370.0" y="30.0" width="90.0" height="240.0" fill="#2F6690" />
+<text x="415.0" y="286" text-anchor="middle">否</text>
+<rect x="520.0" y="179.33333333333334" width="90.0" height="90.66666666666666" fill="#2F6690" />
+<text x="565.0" y="286" text-anchor="middle">是</text>
+<text x="790.0" y="22" text-anchor="middle">病变特点</text>
+<line x1="640.0" y1="270" x2="940.0" y2="270" stroke="#6C757D" />
+<rect x="660.0" y="30.0" width="60.0" height="240.0" fill="#2F6690" />
+<text x="690.0" y="286" text-anchor="middle">破坏</text>
+<rect x="760.0" y="178.29268292682926" width="60.0" height="91.70731707317074" fill="#2F6690" />
+<text x="790.0" y="286" text-anchor="middle">硬化</text>
+<rect x="860.0" y="238.78048780487805" width="60.0" height="31.219512195121954" fill="#2F6690" />
+<text x="890.0" y="286" text-anchor="middle">混合</text>
+</svg>

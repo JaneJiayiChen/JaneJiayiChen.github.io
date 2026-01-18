@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="360" viewBox="0 0 420 360">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="210.0" y="24" text-anchor="middle">混淆矩阵</text>
+<rect x="80.0" y="40.0" width="150.0" height="130.0" fill="#4F6F52" stroke="#6B705C" />
+<text x="155.0" y="105.0" text-anchor="middle">49</text>
+<rect x="230.0" y="40.0" width="150.0" height="130.0" fill="#A3B18A" stroke="#6B705C" />
+<text x="305.0" y="105.0" text-anchor="middle">11</text>
+<rect x="80.0" y="170.0" width="150.0" height="130.0" fill="#A3B18A" stroke="#6B705C" />
+<text x="155.0" y="235.0" text-anchor="middle">47</text>
+<rect x="230.0" y="170.0" width="150.0" height="130.0" fill="#DDA15E" stroke="#6B705C" />
+<text x="305.0" y="235.0" text-anchor="middle">70</text>
+<text x="155.0" y="340" text-anchor="middle">预测: 不愈合/复发</text>
+<text x="305.0" y="340" text-anchor="middle">预测: 愈合</text>
+<text x="26" y="105.0" text-anchor="middle">真实: 不愈合/复发</text>
+<text x="26" y="235.0" text-anchor="middle">真实: 愈合</text>
+</svg>

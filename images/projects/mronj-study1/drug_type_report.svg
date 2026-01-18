@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">药物类型（报告口径）</text>
+<path d="M 240 220 L 380.0 220.0 A 140 140 0 1 1 156.8 107.4 Z" fill="#4F6F52" stroke="#6B705C" />
+<path d="M 240 220 L 156.8 107.4 A 140 140 0 0 1 194.5 87.6 Z" fill="#A3B18A" stroke="#6B705C" />
+<path d="M 240 220 L 194.5 87.6 A 140 140 0 0 1 278.7 85.5 Z" fill="#DDA15E" stroke="#6B705C" />
+<path d="M 240 220 L 278.7 85.5 A 140 140 0 0 1 313.4 100.8 Z" fill="#BC6C25" stroke="#6B705C" />
+<path d="M 240 220 L 313.4 100.8 A 140 140 0 0 1 380.0 220.0 Z" fill="#9C9F84" stroke="#6B705C" />
+<rect x="440" y="80" width="12" height="12" fill="#4F6F52" />
+<text x="458" y="91">双膦酸盐类药物 (120, 64.9%)</text>
+<rect x="440" y="98" width="12" height="12" fill="#A3B18A" />
+<text x="458" y="109">地舒单抗 (9, 4.9%)</text>
+<rect x="440" y="116" width="12" height="12" fill="#DDA15E" />
+<text x="458" y="127">双膦酸盐与地舒单抗联合使用 (18, 9.7%)</text>
+<rect x="440" y="134" width="12" height="12" fill="#BC6C25" />
+<text x="458" y="145">抗血管生成/免疫调节药物 (8, 4.3%)</text>
+<rect x="440" y="152" width="12" height="12" fill="#9C9F84" />
+<text x="458" y="163">抗骨吸收药物及抗血管生成药物联用 (30, 16.2%)</text>
+</svg>

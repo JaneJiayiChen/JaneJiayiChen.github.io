@@ -1,0 +1,27 @@
+研究2：手术治疗预后预测模型（聚合结果）
+纳入样本量: 186
+模型样本量: 177
+化验字段来源: hb=derived_from_numeric, alb=derived_from_numeric, ca=derived_from_numeric, glu=derived_from_numeric
+
+术后预后分布:
+- 不愈合/复发: 61 (32.8%)
+- 愈合: 125 (67.2%)
+
+影像学特征与预后（卡方检验）:
+- 骨膜反应: chi2=0.001, p=0.9730
+- 死骨分离: chi2=4.019, p=0.0450
+- 病变特点: chi2=7.559, p=0.0228
+
+模型评估指标:
+- AUC: 0.770
+- Accuracy: 0.672
+- Sensitivity: 0.598
+- Specificity: 0.817
+- Precision: 0.864
+- F1: 0.707
+
+输出说明:
+- 表格：analysis_outputs/study2/tables/
+- 图像：analysis_outputs/study2/figures/
+- 系数表：analysis_outputs/study2/tables/multivariate_full.csv
+- 所有结果均为聚合统计，不包含原始数据。

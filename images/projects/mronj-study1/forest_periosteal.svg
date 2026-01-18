@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">骨膜反应多因素回归</text>
+<text x="360.0" y="422" text-anchor="middle">log10(OR)</text>
+<text x="18" y="215.0" text-anchor="middle" transform="rotate(-90,18,215.0)">变量</text>
+<line x1="500" y1="24" x2="516" y2="24" stroke="#6B4E3D" />
+<circle cx="508" cy="24" r="3" fill="#C8553D" />
+<text x="522" y="28">OR 与 95% CI</text>
+<line x1="500" y1="40" x2="516" y2="40" stroke="#588157" stroke-dasharray="4 2" />
+<text x="522" y="44">OR=1 参考线</text>
+<line x1="220" y1="386" x2="680" y2="386" stroke="#6B4E3D" />
+<line x1="220" y1="50" x2="220" y2="380" stroke="#6B4E3D" />
+<line x1="220" y1="56.0" x2="214" y2="56.0" stroke="#6B4E3D" />
+<line x1="220" y1="56.0" x2="680" y2="56.0" stroke="#E6E6E6" />
+<line x1="220" y1="138.5" x2="214" y2="138.5" stroke="#6B4E3D" />
+<line x1="220" y1="138.5" x2="680" y2="138.5" stroke="#E6E6E6" />
+<line x1="220" y1="221.0" x2="214" y2="221.0" stroke="#6B4E3D" />
+<line x1="220" y1="221.0" x2="680" y2="221.0" stroke="#E6E6E6" />
+<line x1="220" y1="303.5" x2="214" y2="303.5" stroke="#6B4E3D" />
+<line x1="220" y1="303.5" x2="680" y2="303.5" stroke="#E6E6E6" />
+<line x1="44.306566232789436" y1="386" x2="44.306566232789436" y2="392" stroke="#6B4E3D" />
+<text x="44.306566232789436" y="404" text-anchor="middle">0.10</text>
+<line x1="291.0091004857193" y1="386" x2="291.0091004857193" y2="392" stroke="#6B4E3D" />
+<text x="291.0091004857193" y="404" text-anchor="middle">1.0</text>
+<line x1="537.7116347386491" y1="386" x2="537.7116347386491" y2="392" stroke="#6B4E3D" />
+<text x="537.7116347386491" y="404" text-anchor="middle">10.0</text>
+<line x1="784.414168991579" y1="386" x2="784.414168991579" y2="392" stroke="#6B4E3D" />
+<text x="784.414168991579" y="404" text-anchor="middle">100.0</text>
+<line x1="290.07820205418324" y1="56.0" x2="297.048204159362" y2="56.0" stroke="#6B4E3D" />
+<circle cx="293.5632031067726" cy="56.0" r="3" fill="#C8553D" />
+<text x="210" y="60.0" text-anchor="end">年龄</text>
+<line x1="220.0" y1="138.5" x2="418.50365021157813" y2="138.5" stroke="#6B4E3D" />
+<circle cx="319.25182510578907" cy="138.5" r="3" fill="#C8553D" />
+<text x="210" y="142.5" text-anchor="end">原发病=多发性骨髓瘤</text>
+<line x1="305.4139279364835" y1="221.0" x2="438.7595742680202" y2="221.0" stroke="#6B4E3D" />
+<circle cx="372.08675110225187" cy="221.0" r="3" fill="#C8553D" />
+<text x="210" y="225.0" text-anchor="end">血色素（正常）</text>
+<line x1="353.2794321391499" y1="303.5" x2="680.0" y2="303.5" stroke="#6B4E3D" />
+<circle cx="516.6397160695749" cy="303.5" r="3" fill="#C8553D" />
+<text x="210" y="307.5" text-anchor="end">原发病=良性疾病</text>
+<line x1="291.0091004857193" y1="46" x2="291.0091004857193" y2="380" stroke="#588157" stroke-dasharray="4 2" />
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">混合 vs 破坏</text>
+<text x="360.0" y="422" text-anchor="middle">log10(OR)</text>
+<text x="18" y="215.0" text-anchor="middle" transform="rotate(-90,18,215.0)">变量</text>
+<line x1="500" y1="24" x2="516" y2="24" stroke="#495057" />
+<circle cx="508" cy="24" r="3" fill="#2F6690" />
+<text x="522" y="28">OR 与 95% CI</text>
+<line x1="500" y1="40" x2="516" y2="40" stroke="#C8553D" stroke-dasharray="4 2" />
+<text x="522" y="44">OR=1 参考线</text>
+<line x1="220" y1="386" x2="680" y2="386" stroke="#495057" />
+<line x1="220" y1="50" x2="220" y2="380" stroke="#495057" />
+<line x1="220" y1="56.0" x2="214" y2="56.0" stroke="#495057" />
+<line x1="220" y1="56.0" x2="680" y2="56.0" stroke="#E6E6E6" />
+<line x1="220" y1="166.0" x2="214" y2="166.0" stroke="#495057" />
+<line x1="220" y1="166.0" x2="680" y2="166.0" stroke="#E6E6E6" />
+<line x1="220" y1="276.0" x2="214" y2="276.0" stroke="#495057" />
+<line x1="220" y1="276.0" x2="680" y2="276.0" stroke="#E6E6E6" />
+<line x1="-9.142163766699923" y1="386" x2="-9.142163766699923" y2="392" stroke="#495057" />
+<text x="-9.142163766699923" y="404" text-anchor="middle">0.01</text>
+<line x1="228.96334215902831" y1="386" x2="228.96334215902831" y2="392" stroke="#495057" />
+<text x="228.96334215902831" y="404" text-anchor="middle">0.10</text>
+<line x1="467.0688480847565" y1="386" x2="467.0688480847565" y2="392" stroke="#495057" />
+<text x="467.0688480847565" y="404" text-anchor="middle">1.0</text>
+<line x1="705.1743540104849" y1="386" x2="705.1743540104849" y2="392" stroke="#495057" />
+<text x="705.1743540104849" y="404" text-anchor="middle">10.0</text>
+<line x1="220.0" y1="56.0" x2="514.5771874908726" y2="56.0" stroke="#495057" />
+<circle cx="367.2885937454363" cy="56.0" r="3" fill="#2F6690" />
+<text x="210" y="60.0" text-anchor="end">原发病（恶性）</text>
+<line x1="230.6562757406573" y1="166.0" x2="680.0" y2="166.0" stroke="#495057" />
+<circle cx="455.32813787032865" cy="166.0" r="3" fill="#2F6690" />
+<text x="210" y="170.0" text-anchor="end">BPs+DMB联合</text>
+<line x1="460.2900794223275" y1="276.0" x2="471.36205430952896" y2="276.0" stroke="#495057" />
+<circle cx="465.8260668659282" cy="276.0" r="3" fill="#2F6690" />
+<text x="210" y="280.0" text-anchor="end">出现症状至入院时间</text>
+<line x1="467.0688480847565" y1="46" x2="467.0688480847565" y2="380" stroke="#C8553D" stroke-dasharray="4 2" />
+</svg>

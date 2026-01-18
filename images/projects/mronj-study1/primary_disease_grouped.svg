@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+<style>text { font-family: Arial, sans-serif; font-size: 12px; fill: #111; }</style>
+<text x="360.0" y="26" text-anchor="middle">原发病分布（分组）</text>
+<line x1="70" y1="350" x2="700" y2="350" stroke="#6B705C" />
+<text x="18" y="200.0" text-anchor="middle" transform="rotate(-90,18,200.0)">人数</text>
+<text x="360.0" y="402" text-anchor="middle">原发病分组</text>
+<rect x="580" y="22" width="12" height="12" fill="#4F6F52" />
+<text x="598" y="33">人数</text>
+<rect x="112.0" y="72.22222222222223" width="126.0" height="277.77777777777777" fill="#4F6F52" />
+<text x="175.0" y="66.22222222222223" text-anchor="middle">144</text>
+<text x="175.0" y="366" text-anchor="middle">恶性肿瘤骨转移</text>
+<rect x="322.0" y="307.5617283950617" width="126.0" height="42.438271604938265" fill="#4F6F52" />
+<text x="385.0" y="301.5617283950617" text-anchor="middle">22</text>
+<text x="385.0" y="366" text-anchor="middle">多发性骨髓瘤</text>
+<rect x="532.0" y="311.41975308641975" width="126.0" height="38.58024691358025" fill="#4F6F52" />
+<text x="595.0" y="305.41975308641975" text-anchor="middle">20</text>
+<text x="595.0" y="366" text-anchor="middle">良性疾病</text>
+</svg>
